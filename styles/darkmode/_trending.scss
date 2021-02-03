@@ -1,0 +1,51 @@
+@media screen and (min-width: 1024px) {
+    .body-dark {
+        .slider-prev {
+            border: 1px solid $blanco;
+    
+            .prev-blanco {
+                display: block;
+                width: 8px;
+            }
+            .prev-violeta {
+                display: none;
+            }
+        }
+    
+        .slider-prev:hover {
+            background-color: $gris-oscuro;
+    
+            .prev-violeta {
+                display: none;
+            }
+    
+            .prev-blanco {
+                color: $gris-oscuro;
+            }
+        }
+    
+        .slider-next {
+            border: 1px solid $blanco;
+    
+            .next-blanco {
+                display: block;
+                width: 8px;
+            }
+            .next-violeta {
+                display: none;
+            }
+        }
+    
+        .slider-next:hover {
+            background-color: $gris-oscuro;
+    
+            .next-violeta {
+                display: none;
+            }
+    
+            .next-blanco {
+                color: $gris-oscuro;
+            }
+        }
+    }
+}

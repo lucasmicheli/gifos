@@ -1,0 +1,119 @@
+//menu mobile
+
+.body-dark {
+    background-color: $gris-oscuro;
+
+    .linea-violeta {
+        background-color: $negro;
+    }
+
+    header {
+        .navbar {
+            background-color: $gris-oscuro;
+
+            .nav-search {
+                visibility: hidden;
+            }
+
+            nav {
+                .menu {
+                    ul {
+                        background-color: $negro;
+
+                        li {
+                            .menu-items {
+                                color: $blanco;
+                            }
+                        }
+
+                        li:first-child .menu-items {
+                            padding-top: 0;
+                        }
+                    }
+
+                    label {
+                        span {
+                            background-color: $blanco;
+                        }
+                    }
+
+                    /* lo que pasa cuando apreto el checkbox*/
+
+                    input:checked ~ label span {
+                        background-color: $blanco;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
+//menu desktop
+@media screen and (min-width: 1024px) {
+    .body-dark {
+        .shadow {
+            background: #37383C;
+            box-shadow: 0 2px 4px 1px rgba(156,175,195,0.55);
+        }
+
+        header {
+            .navbar {
+
+                .nav-search {
+                    visibility: hidden;
+                    background: #37383C;
+                    border: 1px solid #FFFFFF;;
+                    border-radius: 27px;
+                    border-radius: 27px;
+                    height: 50px;
+                    width: 334px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    #search-input-nav {
+                        border: none;
+                        font-family: $roboto;
+                        color: $gris-medio;
+                        font-size: 16px;
+                        font-weight: 400;
+                        background: unset;
+                    }
+                }
+                nav {
+                    .menu {
+                        ul {
+                            li {
+                                .menu-items {
+                                    color: $blanco;
+                                    border-bottom: 2px solid $gris-oscuro;
+                                }
+
+                                .menu-items:hover {
+                                    border-bottom: 2px solid $turquesa;
+                                }
+                                
+                                .menu-creargifo {
+                                    border: 1px solid $blanco;
+                                }
+
+                                .menu-creargifo:hover {
+                                    background-color: $blanco;
+                                }
+
+                                .menu-creargifo:active {
+                                    background-color: $blanco;
+                                }
+                            }
+                        }
+
+                        ul {
+                            background-color: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

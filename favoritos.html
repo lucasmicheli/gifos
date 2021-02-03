@@ -5,35 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lucas Micheli">
     <meta name="description" content="GIFOS - GIFs for everyone!">
-    <title>GIFOS</title>
+    <title>GIFOS - Favoritos</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="icon" href="./assets/favicon.ico" type="image/icon">
 </head>
+
 <body id="body">
     <header id="header">
         <div class="linea-violeta"></div>
         <div class="navbar">
             <a href="index.html" class="menu-items">
-                <img src="./assets/logo-mobile.svg" alt="Logo GIFOS" id="logo">
-                <img src="./assets/logo-desktop.svg" alt="Logo GIFOS" id="logo-desktop">
+                <img src="./assets/logo-mobile.svg" alt="Logo GifOs" id="logo">
+                <img src="./assets/logo-desktop.svg" alt="Logo GifOs" id="logo-desktop">
             </a>
-            <div class="nav-search" id="nav-search">
-                <input type="text" id="search-input-nav" placeholder="Busca GIFOS y más"> 
-                <a href="#" >
-                    <img src="./assets/icon-search.svg" alt="Search" title="Buscar" id="search-icon-nav" class="search-icon">
-                </a>
-            </div>
             <nav>
                 <div class="menu">
-                    <input type="checkbox" id="checkbox" />
+                    <input type="checkbox" id="checkbox"/>
                     <label for="checkbox" id="icon-hamburguesa">
                         <span class="span1"></span>
                         <span class="span2"></span>
                         <span class="span3"></span>
                     </label>
                     <ul id="ul-menu">
-                        <li><a href="#" id="menu-modo" class="menu-items">Modo Nocturno</a></li>                       
+                        <li><a href="#" id="menu-modo" class="menu-items">Modo Nocturno</a></li>
                         <li><a href="favoritos.html" class="menu-items">Favoritos</a></li>
                         <li><a href="misgifos.html" class="menu-items">Mis GIFOS</a></li>
                         <li>
@@ -47,56 +42,34 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="main-header">
-            <h1>Inspírate, busca, guarda y crea los mejores <span class="gifos">GIFOS</span></h1>
-            <div class="buscador-contenedor">
-                <img src="./assets/ilustra_header.svg" alt="Ilustración Header">
-                <div id="buscador" class="buscador">
-                    <div class="buscador-bloque">
-                        <div class="buscador-y-lupa">
-                            <img src="./assets/icon-search-gris.svg" alt="buscador" class="buscador-lupa-gris"
-                                id="buscador-lupa-gris">
-                            <input type="text" placeholder="Busca GIFOS y más" id="input-buscador"
-                                class="input-buscador">
-                        </div>
-                        <button id="btn-buscador">
-                            <img src="./assets/icon-search.svg" alt="Buscar" id="buscador-lupa"
-                                class="icon-lupa-abierta">
-                            <img src="./assets/button-close.svg" alt="Cerrar Búsqueda" id="cerrar-busqueda"
-                                class="icon-cerrar-busqueda">
-                        </button>
-                    </div>
-                    <ul class="buscador-sugerencias" id="buscador-sugerencias">
-                    </ul>
-                </div>
-            </div>
-            <div class="trending-sugerencias">
-                <h3>Trending:</h3>
-                <p id="trending-topics"></p>
-            </div>
-            <div id="resultados-busqueda-contenedor" class="resultados-busqueda-contenedor">
-                <h2 id="titulo-busqueda" class="titulo-busqueda"></h2>
-                <div id="resultados-busqueda" class="resultados-busqueda">
-                </div>
-                <button id="resultados-vermas" class="btn-generico">ver más</button>
-            </div>
+    <main class="main-fav">
+        <section class="header-favoritos">
+            <img src="./assets/icon-favoritos.svg" alt="favoritos">
+            <h1>Favoritos</h1>
+        </section>
+        <section id="favoritos-vacio">
+            <img src="./assets/icon-mis-gifos-sin-contenido.svg" alt="favoritos sin contenido">
+            <h3>¡Guardá tu primer GIFO en favoritos para que se muestre aquí!</h3>
+        </section>
+        <section id="gifos-favoritos">
+            <div class="resultados-favoritos" id="resultados-favoritos">               
+            </div> 
         </section>
         <section class="trending">
             <h2>Trending GIFOS</h2>
             <p class="trending-text">Mira los últimos GIFOS de nuestra comunidad.</p>
             <div class="trending-slider-contenedor">
                 <div class="slider-prev" id="trending-btn-previous">
-                    <img src="./assets/button-left.svg" alt="izquierda" class="prev-violeta" id="btn-prev">
-                    <img src="./assets/button-left-blanco.svg" alt="izquierda" class="prev-blanco" id="btn-prev-blanco">
+                    <img src="./assets/button-left.svg" alt="izquierda" class="prev-violeta">
+                    <img src="./assets/button-left-blanco.svg" alt="izquierda" class="prev-blanco">
                 </div>
                 <div class="trending-slider-box">
                     <div class="trending-slider" id="trending-slider">
                     </div>
                 </div>
                 <div class="slider-next" id="trending-btn-next">
-                    <img src="./assets/button-right.svg" alt="derecha" class="next-violeta" id="btn-next">
-                    <img src="./assets/button-right-blanco.svg" alt="derecha" class="next-blanco" id="btn-next-blanco">
+                    <img src="./assets/button-right.svg" alt="derecha" class="next-violeta">
+                    <img src="./assets/button-right-blanco.svg" alt="derecha" class="next-blanco">
                 </div>
             </div>
         </section>
@@ -106,7 +79,7 @@
             <div class="footer-redes">
                 <p>Compartir en:</p>
                 <div class="redes-iconos-contenedor">
-                    <a href="https://www.facebook.com/" class="redes-icon" target="_blank" rel="noopener noreferrer">
+                   <a href="https://www.facebook.com/" class="redes-icon" target="_blank" rel="noopener noreferrer">
                         <img src="./assets/icon_facebook.svg" alt="Facebook" class="icon">
                         <img src="./assets/icon_facebook-hover.svg" alt="Facebook" class="icon-hover">
                     </a>
@@ -127,7 +100,7 @@
         <div class="linea-violeta"></div>
     </footer>
     <script src="./scripts/shared.js"></script>
-    <script src="./scripts/inicio.js"></script>
+    <script src="./scripts/favoritos.js"></script>
     <script src="./scripts/slider.js"></script>
     <script src="./scripts/darkmode.js"></script>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>

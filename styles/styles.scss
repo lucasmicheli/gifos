@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "basics/variables";
+@import "basics/mixins";
+
+@import "lightmode/navbar";
+@import "lightmode/footer";
+@import "lightmode/inicio";
+@import "lightmode/trending";
+@import "lightmode/favoritos";
+@import "lightmode/misgifos";
+@import "lightmode/creargifo";
+@import "lightmode/modal";
+
+@import "darkmode/navbar";
+@import "darkmode/footer";
+@import "darkmode/inicio";
+@import "darkmode/trending";
+@import "darkmode/favoritos";
+@import "darkmode/misgifos";
+@import "darkmode/creargifo";
+@import "darkmode/modal";

@@ -185,7 +185,6 @@ function busquedaGifos() {
     cerrarBoxBusqueda();
 }
 
-
 function traerBusqueda(content) {
     resultadosBusquedaGIFOS.innerHTML += `
         <div class="resultados-gif-box" onclick="maxGifMobile('${content.images.downsized.url}', '${content.id}', '${content.slug}', '${content.username}', '${content.title}')">
@@ -227,7 +226,6 @@ function verMasResultados() {
     busquedaGifosVerMas();
 }
 
-// !! TRATAR DE REUTILIZAR LA FUNCIÓN DE CREACIÓN DE ARRIBA
 function busquedaGifosVerMas() {
     event.preventDefault();
     let urlBusqueda = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&limit=12&offset=${offsetBusqueda}&q=`;
@@ -343,10 +341,8 @@ function cerrarModalMobile() {
 } 
 
 function agregarFavoritoMaxMobile(gif){
-
     let iconFavMaxMobile = document.getElementById('icon-fav-max-mob-' + gif);
     iconFavMaxMobile.setAttribute("src", "./assets/icon-fav-active.svg");
-
     agregarFavorito(gif);
 }
 
@@ -379,9 +375,7 @@ function cerrarModalDesktop() {
 } 
 
 function agregarFavoritoMax(gif){
-
     let iconFavMax = document.getElementById('icon-fav-max-' + gif);
     iconFavMax.setAttribute("src", "./assets/icon-fav-active.svg");
-
     agregarFavorito(gif);
 }

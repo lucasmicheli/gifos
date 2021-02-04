@@ -32,7 +32,6 @@ let darkModeDesactivado = () => {
 
     cambiarLogos();
     cambiarCrearGifo();
-    cambiarBusquedaNav()
 
     if (url === "/index.html" || url === "/gifos/index.html") {
         cambiarBusqueda();

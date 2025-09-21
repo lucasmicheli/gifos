@@ -12,4 +12,4 @@ El desafío consiste en la creación de una aplicación web interactiva para com
 
 ## Demo
 
-La demo final del proyecto se encuentra disponible en https://misgifos.now.sh
+La demo final del proyecto se encuentra disponible en https://gifos-lm.netlify.app
